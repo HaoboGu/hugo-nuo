@@ -149,4 +149,6 @@
 <!-- Video.js Styles -->
 {{ if and (eq .Kind "page") (eq .Type "post") }}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video-js.min.css">
+<! -- Add MathJax support -->
+{{ partial "mathjax.html" . }}
 {{ end }}
