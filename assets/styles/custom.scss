@@ -9,6 +9,7 @@
     --item-hover-bg-color: #f1f4f5;
     --item-hover-text-color: black;
     --control-text-color: #555;
+    --table-border-color: #b4b4b4;
 }
 
 @include-when-export url(https://raw.githubusercontent.com/slashfoo/lmweb/master/style/latinmodern-mono-light.css);
@@ -208,22 +209,23 @@ html {
         background: #fff387;
     }
 
-    td, th {
-        border: 1px solid;
-        padding-left: 1ch;
-        padding-right: 1ch;
+    table {
+        border: 1px solid #777;
+        margin: 1rem 0;
     }
-
-    /*table tr[cid]:first-child > td {
-        border-top: 3px double;
-    }*/
-
+    table tr:nth-child(2n) {
+        background: #d4d4d4;
+    }
+    
     th {
         border-bottom: 0;
         padding-top: 2px;
-        background: #575c61;
-        border-color: #333;
+        background: #8d9297;
         color: #f3f3f3;
+    }
+    td, th {
+        padding: .35rem .7rem;
+        border: 1px solid #777;
     }
 
     pre.md-meta-block {
@@ -306,13 +308,9 @@ html {
         font-size: inherit !important;
     }
 
-    /*blockquote:before {
-        display: block;
-        content: "\201C";
-        font-size: 80px;
-        position: absolute;
-        left: -20px;
-        top: -20px;
-        color: #7a7a7a;
-    }*/
+    code {
+        background-color: #f0f0f0;
+        color: rgb(44, 44, 44);
+    }
+
 }
