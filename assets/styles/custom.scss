@@ -171,7 +171,8 @@ html {
 
     *.in-text-selection,
     ::selection {
-        background-color: #CBDFF8;
+        background-color: #CBDFF8 !important;
+        background: #CBDFF8;
     }
     .CodeMirror-selected {
         background: var(--search-select-bg-color);
