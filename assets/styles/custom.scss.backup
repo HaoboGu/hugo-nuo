@@ -20,17 +20,72 @@ html {
 }
 
 @font-face {
-    font-family: 'Source Sans Pro';
+    font-family: 'STIX2Text';
     font-style: normal;
-    src: url('../SourceSansPro.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Roboto Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/RobotoMono.woff2') format('woff2');
+    font-weight: normal;
+    src: local('STIX2Text Regular'),
+        url('../academic/STIX2Text-Regular.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff')
 }
 
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: italic;
+    font-weight: normal;
+    src: local('STIX2Text Italic'),
+        url('../academic/STIX2Text-Italic.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: normal;
+    font-weight: bold;
+    src: local('STIX2Text Bold'),
+        url('../academic/STIX2Text-Bold.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: italic;
+    font-weight: bold;
+    src: local('STIX2Text Bold Italic'),
+    url('../academic/STIX2Text-BoldItalic.woff') format('woff'),
+    url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-BoldItalic.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Math';
+    font-style: italic;
+    font-weight: bold;
+    src: local('STIX2Math'),url('../academic/STIX2Math.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Latin Modern Mono Light';
+    src: url('../academic/lmmonolt10-oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Latin Modern Mono Light';
+    src: url('../academic/lmmonolt10-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Latin Modern Mono Light';
+    src: url('../academic/lmmonolt10-boldoblique-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Latin Modern Mono Light';
+    src: url('../academic/lmmonolt10-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 #write {
     font-family: $family-sans-serif, "Times New Roman", "serif";
     line-height: 1.5em;
@@ -38,7 +93,7 @@ html {
     padding-top: 5%;
 }
 .post-content {
-    font-family: 'Source Sans Pro', $family-sans-serif, "Times New Roman", "serif";
+    font-family: $family-source-sans-pro, $family-sans-serif, "STIX2Text", "Times New Roman", "serif";
     .file-list-item-summary {
         height: 36px;
     }
@@ -96,9 +151,6 @@ html {
         margin-top: 1em;
         margin-bottom: 1em;
         text-align: justify;
-        font-family: 'Source Sans Pro';
-        font-size: 1.1em;
-        font-weight: 300;
     }
 
     .footnotes {
@@ -251,4 +303,5 @@ html {
         background-color: #f4f3f4;
         margin-left: 10px;
     }
+
 }

@@ -20,7 +20,7 @@ $primary-invert: $green-invert;
 $light: $white-ter;
 $dark: $grey-darker;
 $background: $white-ter;
-$code-background: rgb(246, 248, 250);
+$code-background: #f8f8f8;
 $main-background: $white;
 
 /* Text colors */
@@ -42,8 +42,9 @@ $box-shadow-darker: rgba(0, 0, 0, 0.3);
 
 /* Typography */
 $family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", sans-serif;
-$family-monospace: "Fira Code", "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", Courier, monospace;
+$family-monospace: Monaco, "Fira Code", "Roboto Mono", Menlo, Consolas, "Courier New", Courier, monospace;
 $family-lobster: 'Lobster', cursive, $family-sans-serif;
+$family-source-sans-pro: 'Source Sans Pro', sans-serif;
 $size-1: 3rem;
 $size-2: 2.5rem;
 $size-3: 2rem;
