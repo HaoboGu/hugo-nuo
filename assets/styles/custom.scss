@@ -53,15 +53,15 @@ html {
     }
 
     a, a:visited {
-        color: #a00;
+        color: rgb(0, 170, 37);
     }
 
     h1, h2, h3, h4, h5, h6 {
         font-family: inherit; 
         font-weight: bold;
         line-height: 1.5em;
-        margin-bottom: 1em;
-        margin-top: 1em;
+        margin-bottom: 0.85em;
+        margin-top: 0.85em;
     }
 
     h1  {
@@ -74,6 +74,7 @@ html {
 
     h2 {
         font-size: 1.8em;
+        border-bottom: 1px solid #eaecef;
     }
 
     h3 {
@@ -93,12 +94,15 @@ html {
     }
 
     p {
-        margin-top: 1em;
-        margin-bottom: 1em;
-        text-align: justify;
+        margin: 0.5em;
+        margin-left: 0.5em;
+        margin-block: 0em;
+        padding: 0px;
+        // text-align: justify;
         font-family: 'Source Sans Pro';
         font-size: 1.1em;
-        font-weight: 300;
+        font-weight: 500;
+        line-height: 1.6em;
     }
 
     .footnotes {
@@ -122,20 +126,6 @@ html {
     ::selection {
         background-color: #CBDFF8 !important;
         background: #CBDFF8;
-    }
-    .CodeMirror-selected {
-        background: var(--search-select-bg-color);
-        color: var(--search-select-text-color) !important;
-        text-shadow: none;
-    }
-
-    a.md-toc-inner {
-        color: var(--text-color);
-    }
-
-    .md-def-name:before,
-    .md-def-name:after {
-        color: #2d2d2d;
     }
 
     sup.md-footnote {
@@ -166,56 +156,11 @@ html {
         border: 1px solid #777;
     }
 
-    pre.md-meta-block {
-        border: 1px solid #a2a9b1;
-        background-color: #f8f9fa;
-        padding: 5px;
-        margin-bottom: 1em;
-    }
-
-    .task-list-item input:before {
-        content: '\221A';
-        display: inline-block;
-        width: 1.25rem;
-        height: 1.6rem;
-        vertical-align: middle;
-        text-align: center;
-        color: #bbb;
-        background-color: inherit;
-    }
-
-    .task-list-item input:checked:before,
-    .task-list-item input[checked]:before{
-        color: inherit;
-    }
-
-    .md-task-list-item > input {
-        top: auto;
-        margin-left: -1.1em;
-        font-size: 1.3em;
-        margin-top: 0px;
-        -webkit-appearance: none;
-    }
-
-    .md-task-list-item input:before {
-        content: '\2610';
-        display: inline-block;
-        width: 1.25rem;
-        height: 1.6rem;
-        vertical-align: middle;
-        text-align: center;
-        color: #bbb;
-        background-color: inherit;
-    }
-
-    .md-task-list-item input:checked:before,
-    .md-task-list-item input[checked]:before{
-        color: inherit;
-        content: '\2611';
-    }
-
-    .task-list-item {
-        padding-left: 1.5em;
+    // Unordered list
+    ul {
+        margin-bottom: 0.75em;
+        margin-top: 0.75em;
+        font-size: 1.1em;
     }
 
     blockquote {
@@ -224,7 +169,6 @@ html {
         position: relative;
         color: #383838;
         border-left: 2px solid;
-        
     }
 
     #write > blockquote {
@@ -238,17 +182,31 @@ html {
         color: black;
     }
 
-    .CodeMirror-linenumber {
-        min-width: 25px;
-    }
-
     .md-header {
         font-size: inherit !important;
     }
-
-    code {
-        color: #272822;
+    // Code
+    pre, code {
         background-color: #f4f3f4;
-        margin-left: 10px;
+        padding-top: 0.85em;
+        padding-bottom: 0.85em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        line-height: 1.4em;
+        border-radius: 5px;
+        white-space: pre-wrap;
+        word-break: normal;
+    }
+    // Inline code
+    :not(pre) > code {
+        color: #e96900;
+        font-size: 0.72em;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 1px;
+        padding-right: 1px;
+        border-radius: 4px;
     }
 }
