@@ -16,7 +16,7 @@
 // @include-when-export url(https://raw.githubusercontent.com/slashfoo/lmweb/master/style/latinmodern-mono-light.css);
 
 html {
-    font-size: 12pt;
+    font-size: 13pt;
 }
 
 @font-face {
@@ -100,9 +100,9 @@ html {
         padding: 0px;
         // text-align: justify;
         font-family: 'Source Sans Pro';
-        font-size: 1.1em;
+        font-size: 1em;
         font-weight: 500;
-        line-height: 1.6em;
+        line-height: 1.6rem;
     }
 
     .footnotes {
@@ -158,9 +158,11 @@ html {
 
     // Unordered list
     ul {
-        margin-bottom: 0.75em;
-        margin-top: 0.75em;
-        font-size: 1.1em;
+        margin-bottom: 0.75rem;
+        margin-top: 0.75rem;
+    }
+    ul li {
+        list-style: disc;
     }
 
     blockquote {
